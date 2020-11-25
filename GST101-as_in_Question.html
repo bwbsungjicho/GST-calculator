@@ -27,8 +27,8 @@
             return money * 1.1;
         }
         function Main() {
-            var inputMoney = document.getElementById('txtPrice').value;
-            document.getElementById('txtGST_price').value = 'Hmm, ' + inputMoney + ' gives ' + GSTCalculator(inputMoney);
+            var inputMoney = (document.getElementById('txtPrice') as HTMLInputElement).value;
+            (document.getElementById('txtGST_price') as HTMLInputElement).value = 'Hmm, ' + inputMoney + ' gives ' + GSTCalculator(inputMoney);
         }
     </script>
 </head>
