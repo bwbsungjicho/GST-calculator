@@ -23,12 +23,12 @@
     <title>vMaster</title>
     <meta charset="utf-8" />
     <script type="text/javascript">
-        function calculator(input) {
-            return input * 1.1;
+        function calculator(i) {
+            return i * 1.1;
         }
         function Main() {
-            var value = document.getElementById('txtPrice').value;
-            document.getElementById('txtGST_price').value = 'Hmm, ' + value + ' gives ' + calculator(value);
+            var inputValue = document.getElementById('txtPrice').value;
+            document.getElementById('txtGST_price').value = 'Hmm, ' + inputValue + ' gives ' + calculator(inputValue);
         }
     </script>
 </head>
